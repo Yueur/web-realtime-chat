@@ -1,0 +1,23 @@
+{
+	"name": "real-time-chat",
+	"version": "0.0.1",
+	"description": "realtime chat using socket.io",
+	
+	"dependencies": {
+		"express": "~4.15.2",
+		"socket.io": "~2.1.1",
+		"redis": "~2.8.0",
+		"socket.io-redis": "~5.0.0"
+	},
+	
+	"scripts": {
+		"start": "node index.js"
+	},
+	
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	
+	"license": ""
+}

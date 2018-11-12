@@ -1,0 +1,18 @@
+FROM node
+
+ENV PORT=3000 \
+	DEFAULT_WORKING_DIR=/srv/node/
+
+RUN mkdir -p $DEFAULT_WORKING_DIR
+
+COPY ./src $DEFAULT_WORKING_DIR
+
+RUN cd $DEFAULT_WORKING_DIR && \
+	npm install
+
+WORKDIR ${DEFAULT_WORKING_DIR}
+
+EXPOSE $PORT
+
+CMD ["node", "index.js"]
+
